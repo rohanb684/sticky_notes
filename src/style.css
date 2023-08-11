@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: lightgrey
+}
+
+#app{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 20px;
+    padding: 24px;
+}
+
+.note-container{
+    height: 250px;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0,0,0,0.15);
+    border: none;
+    outline: none;
+    position: relative;
+    background: lightyellow;
+}
+.note{
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.add-note{
+    height: 250px;
+    font-size: 150px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    color: rgba(0,0,0,0.5);
+}
+
+.add-note:hover{
+    background: rgba(0,0,0,0.2);
+}
+
+.delete-btn{
+    position: absolute;
+    color: black;
+    bottom: 10px;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
